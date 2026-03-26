@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>For Ayomi 🎓❤️</title>
   <style>
     * {
@@ -10,11 +10,21 @@
     }
 
     body {
+      padding: 16px;
+    }
+
+    .message-card h1 {
+      font-size: 1.5rem;
+    }
+    .message-card {
+      overflow: visible;
+    }
+
+    body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #fdf2f8, #e0f2fe);
       min-height: 100vh;
-      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -38,11 +48,12 @@
     }
 
     .tap-card h1,
-    .message-card h1 {
-      margin-top: 0;
-      margin-bottom: 12px;
-      font-size: 2rem;
-      color: #111827;
+    .message-card img {
+      width: 100%;
+      height: auto;
+      max-height: 60vh;
+      object-fit: cover;
+      border-radius: 20px;
     }
 
     .tap-card p,
@@ -98,7 +109,7 @@
     .heart {
       position: fixed;
       font-size: 22px;
-      opacity: 0.18;
+      opacity: 0.40;
       animation: floatUp linear forwards;
       pointer-events: none;
       z-index: 1;
@@ -112,7 +123,7 @@
       opacity: 0.9;
       pointer-events: none;
       z-index: 1;
-      animation: fall linear forwards;
+      animation: fall 4s linear forwards;
     }
 
     @keyframes fadeIn {
@@ -155,14 +166,19 @@
     </div>
 
     <div class="message-card">
-      <div class="emoji">🎉🎓❤️</div>
-      <h1>Happy Graduation, Ayomi</h1>
-      <p class="highlight">Ayomide Adeyemo… you really did it😍</p>
+      <img src="ayomi.JPG" alt="Ayomi" style="width:100%; border-radius:20px; margin-bottom:15px;">
+  
+      <div class="emoji">🎉🎓🪖</div>
+      <h1>Happy Graduation, Ayomi 🎓❤️</h1>
+
+    
+      <p><strong>Ayomide Adeyemo… you really did that 😍</strong></p>
+      <p class="highlight">My Soldier😍</p>
       <p>I’m so proud of you and everything you pushed through to get here.</p>
       <p>Even though I couldn’t be there in person, I’m celebrating you from here with the biggest smile.☺️</p>
       <p>I wish I was there to celebrate you properly🥹</p>
       <p class="highlight">I’m definitely making up for it when I see you 💋</p>
-      <p>I love you so much ❤️</p>
+      <p class="highlight">I love you so much ❤️</p>
     </div>
   </div>
 
